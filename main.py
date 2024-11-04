@@ -65,8 +65,10 @@ if st.button("Predict Disease"):
         st.markdown("### Disease Description")
         st.write(dis_des)
         
+        # Display Precautions
         st.markdown("### Precautions")
-        st.write("- " + "\n- ".join([prec for prec in precautions[0]]))
+        st.write("- " + "\n- ".join([str(prec) if not pd.isna(prec) else "" for prec in precautions[0]]))
+
         
         st.markdown("### Medications")
         st.write(", ".join(medications))
