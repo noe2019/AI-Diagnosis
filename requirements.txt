@@ -16,7 +16,7 @@ ordereddict==1.1
 pandas==2.2.3
 protobuf==5.28.3
 pyOpenSSL==24.2.1
-pywin32==308
+pywin32==308; platform_system == "Windows"
 scikit_learn==1.4.0
 streamlit==1.39.0
 thread==2.0.5
